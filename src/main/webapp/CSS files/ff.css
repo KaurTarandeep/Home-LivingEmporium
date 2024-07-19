@@ -1,0 +1,844 @@
+/* background gradient */
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;  
+    margin-left: 0%;
+     background: linear-gradient(-45deg, rgb(237, 172, 172),rgb(241, 32, 4), rgb(116, 97, 97), rgba(230, 17, 17, 0.877), red);
+     background-size: 400% 400%;
+     animation: gradient 15s ease infinite;  
+     /* height: 100vh; */
+     color: #ffffff;  
+ }
+ 
+ @keyframes gradient {
+     0% {
+         background-position: 0% 50%;
+     }
+ 
+     50% {
+         background-position: 100% 50%;
+     }
+ 
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+ 
+ /* main image position  */
+ .div2 {
+     background-image: url("../assets/m.webp");
+     opacity: 0.9;
+     background-size: cover;
+     position: absolute;
+     top: 0;
+     left: 660px;
+     height: 556px;
+     width: 650px;
+     background-color: rgb(145, 141, 141);
+     animation: slide2 1s;
+ }
+ @keyframes slide2{
+     0%{
+         transform: translateY(-100%);
+     }
+     100%{
+         transform: translateY(0);
+     }
+ }
+ 
+ 
+ /* list item position (menu) */
+ .b1{
+	background-color: rgb(138, 10, 10);
+    border-radius: 10px;
+    color: white;    
+    position: relative;
+    top: 20px;
+    left: 175px;
+    height: 40px;
+    width: 90px;
+    font-size: larger;
+ }
+ .div2i li {
+     position: relative;
+     top: 80px;
+     left: 0px;
+     list-style: none;
+     line-height: 50px;
+     text-align: right;
+     margin-right: 40px;
+     animation-name: slide3;
+     animation-duration: 2s;
+ }
+  @keyframes slide3{
+     0%{
+         top: 80px;
+         left: 0px;
+     }
+     50%{
+         left: -80px;
+     }
+     100%{
+         left: 0px;
+         top: 80px;
+     }
+  }
+ 
+ 
+ 
+ /* list item decoration (menu) */
+ .div2i li a {
+     color: white;
+     text-decoration: none;
+     font-family: Verdana;
+     font-size: 15px;
+ }
+ 
+ /* Line through over the navigation items list (menu)*/
+ .div2i li a:hover {
+     /* transition: transform 0.5s ease-in-out; */
+     animation: listitem 1s linear;
+     text-decoration: line-through white;
+     text-decoration-thickness: 1.5px;
+ }
+ 
+ @keyframes listitem {
+     from {
+         text-decoration: transparent;
+     }
+ 
+     to {
+         text-decoration: line-through;
+     }
+ }
+ 
+ 
+ 
+ /* JUO logo */
+ .div1 {
+     position: absolute;
+     top: 40px;
+     left: 40px;
+     width: 50px;
+     text-align: center;
+     background-color: white;
+     color: black;
+     font-family: Arial;
+     font-weight: bold;
+     font-size: x-large;
+     padding: 5px 15px;
+     color: black;
+     animation: slide1 2s;
+ }
+ @keyframes slide1{
+    0%{
+        top: 40px;
+        left: 40px;
+    }
+    50%{
+        width: 120px;
+    }
+ }
+ 
+ /* search bar */
+ input[type=text] {
+     position: absolute;
+     top: 45px;
+     left: 280px;
+     line-height: 40px;
+     width: 360px;
+     border: none;
+     border-bottom: 1px solid white;
+     font-size: medium;
+     font-weight: 600;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     outline: none;
+ }
+ 
+ /* search icon below line */
+ .div3 {
+     position: absolute;
+     top: 57px;
+     left: 250px;
+     height: 30px;
+     width: 30px;
+     border-bottom: 1px solid white;
+ }
+ 
+ /* serach icon */
+ .fa-magnifying-glass {
+     font-size: 14px;
+     color: #ffffff;
+ }
+ 
+ /* IF img */
+ .div4 {
+     background-image: url(../assets/d1.png);
+     background-size: 80% 90%;
+     background-repeat: no-repeat;
+     width: 100px;
+     height: 140px;
+     position: relative;
+     top: 470px;
+     left: 1170px;
+     animation: slide2 2s;
+ }
+  
+ 
+ /* our gallery boxes */
+ .div5 {
+     position: relative;
+     top: 50px;
+     left: 40px;
+     animation: s 2s;
+ }
+ @keyframes s{
+    0%{
+        top: 50px;
+        left: 40px;
+    }
+    50%{
+        left: 80px;
+    }
+}
+ 
+ .box1,.box2 {
+     display: inline-block;
+     height: 15px;
+     width: 15px;
+     background-color: white;
+     margin: 0.5pxpx;
+     /* animation: slide 500ms; */
+ 
+ }
+ 
+ 
+ .span1 {
+     position: relative;
+     left: -198px;
+     font-size: 18px;
+ }
+ 
+ /* Furniture and interior design */
+ .pre1 {
+     position: relative;
+     top: -220px;
+     right: 118px;
+     font-size: 105px;
+     font-family: arial;
+     animation-name: slide4;
+     animation-duration: 2s;
+}
+ @keyframes slide4{
+    0%{
+    
+    }
+    50%{
+        top: -300px;
+    }
+    100%{
+    
+    }
+ }
+
+     
+ 
+ .div6 {
+     position: relative;
+     height: 100px;
+     width: 360px;
+     font-size: 17px;
+     font-family: Arial, Helvetica, sans-serif;
+     top: -400px;
+     left: 235px;
+     line-height: 26px;
+     animation: para ;
+     animation-duration: 2s;
+ }
+ @keyframes para{
+    0%{
+        top: -400px;
+        left: 235px;
+    }
+    50%{
+        left: 330px;
+    }
+    100%{
+    }
+ }
+
+ 
+ /* OBJECT section */
+ .img1 {
+     position: relative;
+     top: 180px;
+     left: 180px;
+     background-image: url(../assets/1.jpg);
+     background-repeat: no-repeat;
+     /* background-attachment: fixed; */
+     background-size: 500px 400px;
+     height: 450px;
+     width: 450px;
+ 
+     animation-duration: 2s;
+     animation-name: imageanimation1;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ }
+ @keyframes imageanimation1{
+     0%{
+         top: 170px;
+     }
+ }
+ 
+ .img2 {
+     position: relative;
+     top: -150px;
+     left: 520px;
+     background-image: url(../assets/2.jpg);
+     background-repeat: no-repeat;
+     /* background-attachment: fixed; */
+     background-size: cover;
+     height: 330px;
+     width: 240px;
+ 
+     animation-duration: 2s;
+     animation-name: imageanimation2;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ }
+ @keyframes imageanimation2{
+     0%{
+         top: -140px;
+     }
+ }
+ 
+ /* object heading */
+ .h {
+     position: relative;
+     top: -650px;
+     left: 830px;
+     font-weight: 10;
+     font-size: 110px;
+     font-family: Helvetica;
+     animation: obj 2s;
+    }
+@keyframes obj{
+    0%{
+        
+    }
+    50%{
+        top:-750px;
+    }
+    100%{
+
+    }
+}    
+ 
+ .para {
+     position: relative;
+     width: 330px;
+     top: -680px;
+     left: 830px;
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 25px;
+     animation: objpara 2s;
+ }
+ @keyframes objpara{
+    0%{
+        
+    }
+    50%{
+        top:-780px;
+    }
+    100%{
+
+    }
+ }
+
+ 
+ .btn1 {
+     position: relative;
+     top: -660px;
+     left: 830px;
+     background-color: #ffffff;
+     /* padding: 15px 40px; */
+     font-size: 15px;
+     font-weight: 300;
+     height: 50px;
+     width: 160px;
+     border: none;
+     animation: objbtn 2s;
+    }
+    @keyframes objbtn{
+       0%{
+           
+       }
+       50%{
+          width:250px;
+       }
+       100%{
+   
+       }
+    }
+ /* Our gallery */
+ .clr{
+     text-align: center;
+     font-family: Arial;
+     font-weight: bold;
+     font-size: large;
+     color: rgba(167, 22, 22, 0.799);
+ }
+ .clr a{
+	color: maroon;
+	text-decoration: none;
+}
+ .img3{
+     position: relative;
+     top: 10px;
+     left: -10px;
+     height: 830px;
+     width: 1360px;
+     background-image: url(../assets/4.webp);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     /* opacity: 0.8; */
+ }
+
+ /* taken blank div to moves pics horizontally  */
+ .blank{
+    height: 730px;
+    width: 1350px; 
+    animation: slide5 ;
+    animation-timeline: scroll()  ;
+}
+@keyframes slide5 {
+   0% {
+       translate: 0;
+   }
+   100% {
+       translate: calc(-30% - 30vw);
+   }
+}
+
+ .img4{
+     margin: 15px;
+     height: 250px;
+     width: 220px;
+     background-image: url(../assets/chair1.jfif);
+     background-size: 100% 100%;
+ }.clr1 {
+     background-color: lavender;
+     position: absolute;
+     top: 200px;
+     left: 820px;
+     height: 320px ;
+     width: 253px ;
+     animation: slide6 2s;
+    }
+    @keyframes slide6{
+       0%{
+           
+       }
+       50%{
+           top:300px;
+       }
+       100%{
+            top: 100px;
+       }
+    } 
+ .img5{
+     margin: 15px;
+     height: 260px;
+     width: 210px;
+     background-image: url(../assets/chair2.webp);
+     background-size: 100% 100%;
+ }.clr2{
+     background-color: lavender;
+     position: absolute;
+     top: 440px;
+     left: 1250px;
+     height: 330px ;
+     width: 245px ;
+     animation: slide7 2s;
+    }
+    @keyframes slide7{
+       0%{
+           
+       }
+       50%{
+           top:200px;
+       }
+       100%{
+ 
+       }
+    } 
+ 
+ .img6{
+     margin: 15px;
+     height: 270px;
+     width: 230px;
+     background-image: url(../assets/lamp1.jfif);
+     background-size: 100% 100%;
+ }.clr3{
+     background-color: lavender;
+     position: absolute;
+     top: 185px;
+     left: 1645px;
+     height: 340px ;
+     width: 263px ;
+     animation: slide8 2s;
+    }
+    @keyframes slide8{
+       0%{
+           
+       }
+       50%{
+           top:400px;
+       }
+       100%{
+ 
+       }
+    }
+ 
+ .img7{
+     margin-left: 20px;
+     height: 250px;
+     width: 230px;
+     position: relative;
+     left: 460px;
+     background-image: url(../assets/5.jpg);
+     background-size: 100% 100%;
+    }
+ 
+ /* ABOUT */
+ .about{    
+     background-color: rgb(243, 241, 241);
+     height: 1000px;
+     width: 1360px;
+     position: absolute;
+     left: -10px;
+ }
+ 
+ /* JUO logo */
+ .juologo {
+     position: absolute;
+     top: 160px;
+     left: 40px;
+     height: 100px;
+     width: 80px;
+     color: black;
+     font-family: Arial;
+     font-size: 40px;
+     animation: slide9 2s;
+ }
+@keyframes slide9{
+    0%{
+
+    }
+    50%{
+        left: 150px;
+    }
+    100%{
+
+    }
+}
+
+ .studiologo{
+     position: absolute;
+     top: 210px;
+     left: 40px;
+     height: 100px;
+     width: 80px;
+     color: black;
+     font-family: Arial;
+     font-size: 15px;
+     animation: slide9 2s;
+ }
+ 
+ /* ABOUT heading */
+ .aboutpro{
+     position: relative; 
+     top: 150px;
+     left: 250px;
+     height: 500px;
+     width: 420px;
+     animation : slide10 2s;
+    }
+    @keyframes slide10{
+        0%{
+    
+        }
+        50%{
+         left: 450px;
+        }
+        100%{
+    
+        }
+    }  
+
+ .abt {
+     font-weight: 10;
+     font-size: 110px;
+     font-family: Helvetica;
+     color: rgb(55, 50, 50);
+ }
+ 
+ .aboutpara {
+     margin-top: 40px;
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 25px;
+     color: rgb(55, 50, 50);
+ }
+
+ .aboutbtn {
+     margin-top: 38px;
+     background-color:  rgb(55, 50, 50);;
+     padding: 15px 40px;
+     font-size: 15px;
+     border: none;
+     color: #ffffff;
+ }
+ 
+ .img8{
+     position: absolute;
+     top: 160px;
+     left: 960px;
+     height: 700px;
+     width: 400px;
+     background-image: url(../assets/6.jpg);
+     background-size: cover;
+     animation : slide11 2s;
+    }
+    @keyframes slide11{
+        0%{
+    
+        }
+        50%{
+         top: 450px;
+        }
+        100%{
+    
+        }
+    }
+
+ .img9{
+     position: absolute;
+     top: 620px;
+     left: 250px;
+     height: 430px;
+     width: 460px;
+     background-image: url(../assets/7.jpg);
+     background-size: 100% 100%;
+     animation-name: aboutimg1;
+     animation-duration: 5s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+ }
+@keyframes aboutimg1{
+    0%{
+        top: 590px;
+    }
+}
+
+ .img10{
+     position: absolute;
+     top: 590px;
+     left: 515px;
+     height: 300px;
+     width: 220px;
+     background-image: url(../assets/cartoon.jpg);
+     background-size: cover;
+     animation-name: aboutimg2;
+     animation-duration: 4s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+ }
+@keyframes aboutimg2{
+    0%{
+        top: 580px;
+    }
+}
+
+ 
+ /* FOOTER */
+ .contact{
+     position: relative;
+     top: 1000px;
+     height: 700px;
+     width: 1500px;
+ }
+ 
+ .txt{
+     position: absolute;
+     top: 130px;
+     left: 20px;
+     height: 600px;
+     color: #ffffff  ;
+     font-size: 130px;
+ }
+ 
+ hr{
+  position: relative;
+  top: 290px;
+  margin-left: 20px;
+ }
+ 
+ /* JUO logo */
+ .rediv1 {
+     position: relative;
+     top: 350px;
+     left: 20px;
+     }
+ /*para 2 */
+ .para2 {
+     position: relative;
+     top: 400px;
+     left: 20px;
+     width: 240px;
+     font-size: 20px;    
+     font-family: 'Times New Roman', Times, serif;
+     animation: slide13 2s;
+    }
+ 
+ /* SITEMAP */
+ .sitemap1{
+     position: absolute;
+     top:360px;
+     left:400px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: x-large; 
+     animation: slide12 2s;
+ }
+ 
+ /* SITEMAP items */
+ .container1{
+ position: relative;
+ top: 320px;
+ left: 400px;
+ height: 100px;
+ width: 300px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ animation: slide12 2s;
+}
+@keyframes slide12{
+   0%{
+
+   }
+   50%{
+       top: 400px
+   }
+   100%{
+       /* top: 100px; */
+   }
+}
+ .sitemap{
+     font-size: larger;
+     flex: 50%;
+ }
+ 
+ .sitemap a{
+     color: white;
+     text-decoration: none;
+     font-family: Verdana;
+     font-size: 17px;
+ }
+ 
+ 
+ /* CONTACT */
+ .con1{
+     position: absolute;
+     top:360px;
+     left:870px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: x-large; 
+     animation: slide14 2s;
+    }
+    @keyframes slide14{
+       0%{
+   
+       }
+       50%{
+           top: 400px
+       }
+       100%{
+           /* top: 100px; */
+       }
+    }
+ /* Contact items */
+ .container2{
+     position: relative;
+     top: 220px;
+     left: 870px;
+     height: 100px;
+     width: 470px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     animation: slide13 2s;
+ }
+ @keyframes slide13{
+    0%{
+
+    }
+    50%{
+        top: 300px
+    }
+    100%{
+        /* top: 100px; */
+    }
+ }
+ 
+ .con{
+     font-size: larger;
+     flex: 50%;    
+ }
+ .con a{
+     text-decoration: none;
+     font-family: Verdana;
+     font-size: 17px;
+     color: #ffffff;    
+ }
+ 
+ /* footer */
+ .container3 div{
+     float: right;
+     margin: 10px;
+     position: relative;
+     top: 280px;
+     left: -330px;
+     height: 40px;
+     width: 40px;
+     border: 0.1px solid rgba(195, 190, 190, 0.787);    
+     font-size: medium;
+     display: grid;
+     place-items: center;
+ }
+
+ .btn{
+  background: linear-gradient(to top, white 50%, rgb(237, 172, 172), rgb(135, 106, 106) 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: 0.2s ease-in-out;
+ }
+ .btn:hover{
+     background-position: bottom;
+     color:  rgb(226, 40, 40);   
+ }
+ 
+ .footer{    
+     position: absolute;
+     top: 720px;
+     height: 60px;
+     width: 1360px;
+     background-color: rgb(23, 23, 33);
+     font-size: large;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-align: center;
+ }
+ 
